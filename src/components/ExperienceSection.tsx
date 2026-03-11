@@ -57,7 +57,11 @@ const ExperienceSection = () => {
                     <span className="text-xs font-mono text-muted-foreground">{exp.period}</span>
                   </div>
                   <p className="text-sm font-medium text-cloud mb-2">{exp.company}</p>
-                  <p className="text-sm text-muted-foreground leading-relaxed">{exp.description}</p>
+                  <ul className="list-disc list-outside ml-4 space-y-1.5">
+                    {exp.bullets.map((bullet, j) => (
+                      <li key={j} className="text-sm text-muted-foreground leading-relaxed">{bullet}</li>
+                    ))}
+                  </ul>
                 </div>
               </motion.div>
             ))}
