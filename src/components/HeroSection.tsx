@@ -23,7 +23,7 @@ const HeroSection = () => {
           </div>
 
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-primary mb-4">
-            Cloud Engineer
+            Aspiring Cloud Engineer
           </h1>
 
           <p className="text-lg sm:text-xl text-muted-foreground font-medium mb-2">
@@ -53,7 +53,7 @@ const HeroSection = () => {
           </div>
 
           <Button asChild variant="ghost" size="sm" className="text-muted-foreground hover:text-primary">
-            <a href="/resume.pdf" download>
+            <a href="/Andre_Resume2026.pdf" download>
               <Download className="w-4 h-4 mr-2" />
               Download Resume
             </a>
