@@ -53,7 +53,7 @@ const HeroSection = () => {
           </div>
 
           <Button asChild variant="ghost" size="sm" className="text-muted-foreground hover:text-primary">
-            <a href="/resume.pdf" download>
+            <a href="/Andre_Resume2026.pdf" download>
               <Download className="w-4 h-4 mr-2" />
               Download Resume
             </a>
