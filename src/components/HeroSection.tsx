@@ -23,7 +23,7 @@ const HeroSection = () => {
           </div>
 
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-primary mb-4">
-            Cloud Engineer
+            Aspiring Cloud Engineer
           </h1>
 
           <p className="text-lg sm:text-xl text-muted-foreground font-medium mb-2">
