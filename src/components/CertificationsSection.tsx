@@ -29,7 +29,7 @@ const CertificationsSection = () => {
           </ul>
 
           <Button asChild size="lg" className="bg-primary text-primary-foreground hover:bg-navy-light">
-            <a href="#" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.credly.com/badges/4fb36cc0-0fe2-47a3-aff1-de0e2e95b3e3/public_url" target="_blank" rel="noopener noreferrer">
               <ExternalLink className="w-4 h-4 mr-2" />
               View Certification
             </a>
