@@ -1,73 +1,77 @@
-# Welcome to your Lovable project
+# AWS Static Portfolio Website
 
-## Project info
+Production-ready personal portfolio website hosted on AWS using a secure, scalable, serverless architecture.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+## Overview
 
-## How can I edit this code?
+Built and deployed a static portfolio website using Amazon S3 for storage, Amazon CloudFront for global content delivery, Route 53 for DNS, AWS Certificate Manager for HTTPS, and AWS WAF for web security.
 
-There are several ways of editing your application.
+This project demonstrates:
 
-**Use Lovable**
+- Modern cloud infrastructure
+- CDN performance optimization
+- Domain management
+- Secure public web hosting
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+## Architecture
 
-Changes made via Lovable will be committed automatically to this repo.
+User Request → CloudFront CDN → AWS WAF → S3 Origin Bucket
 
-**Use your preferred IDE**
+## Services Used
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+### Amazon S3
+Hosted static website assets including HTML, CSS, JavaScript, images, and documents.
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+### Amazon CloudFront
+Delivered cached content globally with low latency and HTTPS support.
 
-Follow these steps:
+### Origin Access Control (OAC)
+Restricted direct public S3 access and allowed secure CloudFront-only origin access.
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+### Amazon Route 53
+Managed custom domain DNS records.
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+### AWS Certificate Manager (ACM)
+Provisioned and attached SSL/TLS certificate for secure HTTPS traffic.
 
-# Step 3: Install the necessary dependencies.
-npm i
+### AWS WAF
+Protected the site using managed firewall rule groups against common attacks and malicious traffic.
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+## Key Features
 
-**Edit a file directly in GitHub**
+- Custom domain connected to CloudFront
+- HTTPS enabled with ACM certificate
+- HTTP/2 and HTTP/3 support
+- Global CDN caching
+- Private S3 bucket with OAC
+- DNS routing through Route 53
+- Managed WAF protection
+- Fully serverless deployment
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## Deployment Steps
 
-**Use GitHub Codespaces**
+1. Built website with HTML, CSS, JavaScript
+2. Created S3 bucket
+3. Uploaded files
+4. Created CloudFront distribution
+5. Configured OAC
+6. Connected domain
+7. Attached ACM certificate
+8. Enabled AWS WAF
+9. Configured Route 53 alias record
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## Security Enhancements
 
-## What technologies are used for this project?
+- TLS encryption enabled
+- Direct S3 public access blocked
+- CloudFront-only delivery path
+- WAF protection against malicious traffic
 
-This project is built with:
+## What I Learned
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+- AWS static hosting architecture
+- CDN optimization
+- SSL certificate management
+- DNS configuration
+- Web application firewall basics
+- Secure serverless deployment
